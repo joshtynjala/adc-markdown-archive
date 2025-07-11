@@ -497,7 +497,7 @@ application.
 
 If you want to take your GUI to the next level of richness, there are many more
 powerful things that you can do with effects in Flex 4.
-[Part 2](flex4_effects_pt2.html) of this article will dive into other effects
+[Part 2](./flex4_effects_pt2.md) of this article will dive into other effects
 that build on the capabilities of Flash Player 10.
 
 > This work is licensed under a

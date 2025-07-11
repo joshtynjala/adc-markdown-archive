@@ -461,7 +461,7 @@ recommends that you use Spark effect classes for future applications.
 
 I've kept this description brief because you can get much more information about
 the new functionality in the effects classes from Chet Haase's
-[Effects in Adobe Flex 4](flex4_effects_pt1.html) article.
+[Effects in Adobe Flex 4](./flex4_effects_pt1.md) article.
 
 #### Changes in layout
 

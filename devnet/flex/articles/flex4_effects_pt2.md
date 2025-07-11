@@ -27,7 +27,7 @@ Beginning
 
 - [flex4-effects-pt2](https://github.com/joshtynjala/adobe-developer-connection-samples-archive/tree/main/flex4-effects-pt2)
 
-In [Part 1](flex4_effects_pt1.html) of this article series on using Flex 4 to
+In [Part 1](./flex4_effects_pt1.md) of this article series on using Flex 4 to
 create basic effects, we looked at the superclass of the new effects, Animate,
 and some of the fundamental effect subclasses. In this article, we'll take a
 look at some other effect subclasses that enable more advanced graphics
@@ -422,7 +422,7 @@ how effects work in Flex 4 and what new facilities are available to create
 compelling applications.
 
 If you haven't done so already, be sure to check out
-[Part 1](flex4_effects_pt1.html) of this article series.
+[Part 1](./flex4_effects_pt1.md) of this article series.
 
 > This work is licensed under a
 > [Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License](https://creativecommons.org/licenses/by-nc-sa/3.0/)

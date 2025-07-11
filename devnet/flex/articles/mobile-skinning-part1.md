@@ -517,7 +517,7 @@ with the MobileSkin base class and the default mobile skins found in the Flex
 location; for example,
 `Adobe Flash Builder 4.5/sdks/4.5.0/frameworks/projects/mobiletheme`.
 
-[The next article](mobile-skinning-part2.html) in this series will cover the
+[The next article](./mobile-skinning-part2.md) in this series will cover the
 process for creating DPI-aware skins to scale across multiple screen sizes. The
 final article will address using CSS media queries to create custom themes based
 on the target platform.

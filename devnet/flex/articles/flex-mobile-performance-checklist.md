@@ -587,7 +587,7 @@ Image scaling with smoothing looks great but requires a lot of processing power.
 Instead of creating one large image asset and scaling it down for different
 screen resolutions and DPI levels, create multiple versions of the image asset
 in different sizes. Check out Flex computer scientist Jason San Jose's article
-[Flex Mobile Skins – Part 2: Handling Different Pixel Densities](mobile-skinning-part2.html)
+[Flex Mobile Skins – Part 2: Handling Different Pixel Densities](./mobile-skinning-part2.md)
 for a detailed tutorial with best practices.
 
 #### Use prebaked assets, text doubling, or RectangularDropShadow instead of filters
@@ -695,7 +695,7 @@ If CSS styling is insufficient, you may decide to write a custom mobile skin for
 a component. You should write the skin in ActionScript and extend the default
 Flex mobile skins to take advantage of their underlying performance
 optimizations. Check out
-[Jason San Jose's series of articles on mobile skinning](mobile-skinning-part1.html)
+[Jason San Jose's series of articles on mobile skinning](./mobile-skinning-part1.md)
 to guide you through the process.
 
 ### Where to go from here

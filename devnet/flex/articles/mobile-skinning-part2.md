@@ -31,7 +31,7 @@ Intermediate
 
 - [mobile-skinning-part2](https://github.com/joshtynjala/adobe-developer-connection-samples-archive/tree/main/mobile-skinning-part2)
 
-In [Part 1](mobile-skinning-part1.html) of this series on creating Flex mobile
+In [Part 1](./mobile-skinning-part1.md) of this series on creating Flex mobile
 skins, I discussed the rationale behind the performance optimizations the Flex
 team made in the Mobile theme and I walked through a simple Button skin example.
 With performance being a primary concern, the next major topic for mobile
@@ -639,7 +639,7 @@ convenience and pixel-perfect control. Before building your application,
 consider how screen density factors into your design and make the most of the
 tools that Flex provides.
 
-[Part 3](mobile-skinning-part3.html) of the series covers theme authoring and
+[Part 3](./mobile-skinning-part3.md) of the series covers theme authoring and
 platform-specific skinning.
 
 > This work is licensed under a

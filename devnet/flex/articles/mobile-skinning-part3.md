@@ -15,7 +15,7 @@ by Jason San Jose
 ### Prerequisite knowledge
 
 Familiarity with ActionScript, CSS, and Flex skinning is required. Read
-[Part 1](mobile-skinning-part1.html) and [Part 2](mobile-skinning-part2.html) of
+[Part 1](./mobile-skinning-part1.md) and [Part 2](./mobile-skinning-part2.md) of
 this series before completing this tutorial.
 
 ### User level
@@ -31,7 +31,7 @@ Intermediate
 
 - [mobile-skinning-part3](https://github.com/joshtynjala/adobe-developer-connection-samples-archive/tree/main/mobile-skinning-part3)
 
-In [Part 2](mobile-skinning-part2.html) of this series on creating Flex mobile
+In [Part 2](./mobile-skinning-part2.md) of this series on creating Flex mobile
 skins, I discussed the effect of screen density (DPI) on component skinning and
 layout of mobile applications. I also showed how to use application scaling,
 density-specific bitmaps, and CSS media queries to adjust and accommodate for
@@ -605,8 +605,8 @@ Builder to recompile the mobile project when the theme project changes.
 #### Phase 4: Create skins and styles
 
 This phase makes up the bulk of the work. I've already described the mobile
-skinning development process in detail in [Part 1](mobile-skinning-part1.html)
-and [Part 2](mobile-skinning-part2.html) of this series on creating Flex mobile
+skinning development process in detail in [Part 1](./mobile-skinning-part1.md)
+and [Part 2](./mobile-skinning-part2.md) of this series on creating Flex mobile
 skins. To recap, the process is as follows:
 
 1.  Create graphic assets as FXG.
