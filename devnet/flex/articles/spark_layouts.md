@@ -230,12 +230,12 @@ next row when the container width limit is reached. See Figure 1 and Figure 2
 for a container with text elements, arranged by a FlowLayout at different width
 settings.
 
-![Text within a List container with FlowLayout and width set to 212 pixels](spark_layouts/img/1279856107423.jpg "Text within a List container with FlowLayout and width set to 212 pixels")
+![Text within a List container with FlowLayout and width set to 212 pixels](spark_layouts/img/1279856107423.jpg)
 
 Figure 1. Text within a List container with FlowLayout and width set to 212
 pixels
 
-![Text within a List container with FlowLayout and width set to 108 pixels](spark_layouts/img/1279856142640.jpg "Text within a List container with FlowLayout and width set to 108 pixels")
+![Text within a List container with FlowLayout and width set to 108 pixels](spark_layouts/img/1279856142640.jpg)
 
 Figure 2. Text within a List container with FlowLayout and width set to 108
 pixels

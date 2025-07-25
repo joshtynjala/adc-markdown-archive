@@ -110,12 +110,12 @@ approximate physical size. Internally to your MXML and ActionScript code,
 however, all values are their original 160 DPI values; the scaling is applied at
 the stage level.
 
-![Actual pixels at 320 x 480 160 DPI (left) and 480 x 800 240 DPI (right).](mobile-skinning-part2/img/fig01.png "Actual pixels at 320 x 480 160 DPI (left) and 480 x 800 240 DPI (right).")
+![Actual pixels at 320 x 480 160 DPI (left) and 480 x 800 240 DPI (right).](mobile-skinning-part2/img/fig01.png)
 
 Figure 1. Actual pixels at 320 x 480 160 DPI (left) and 480 x 800 240 DPI
 (right).
 
-![Physical size (approx.) at 320 x 480 160 DPI (left) and 480 x 800 240 DPI (right).](mobile-skinning-part2/img/fig02.png "Physical size (approx.) at 320 x 480 160 DPI (left) and 480 x 800 240 DPI (right).")
+![Physical size (approx.) at 320 x 480 160 DPI (left) and 480 x 800 240 DPI (right).](mobile-skinning-part2/img/fig02.png)
 
 Figure 2. Physical size (approx.) at 320 x 480 160 DPI (left) and 480 x 800 240
 DPI (right).
@@ -296,7 +296,7 @@ your preview device in Design View, then Design View will scale your application
 150% and display it at the dimensions of the Nexus S. This means that one pixel
 in your Flex code now corresponds to 1.5 pixels in Design View (see Figure 3).
 
-![Using device configurations in Design View](mobile-skinning-part2/img/fig03.png "Using device configurations in Design View")
+![Using device configurations in Design View](mobile-skinning-part2/img/fig03.png)
 
 Figure 3. Using device configurations in Design View
 
@@ -318,7 +318,7 @@ you choose either a single bitmap or a multiresolution bitmap. Choosing the
 latter will bring up a dialog box that you can use to specify bitmaps for each
 DPI classification (see Figure 4).
 
-![The Multiresolution Bitmap dialog box.](mobile-skinning-part2/img/fig04.jpg "The Multiresolution Bitmap dialog box.")
+![The Multiresolution Bitmap dialog box.](mobile-skinning-part2/img/fig04.jpg)
 
 Figure 4. The Multiresolution Bitmap dialog box.
 
@@ -341,7 +341,7 @@ or Debug Configurations dialog box. ADL will pass the screen density specified
 in the device configuration to the Flex application, so it will exhibit the same
 scaling behavior you would see on a device.
 
-![The Run Configurations dialog box.](mobile-skinning-part2/img/fig05.png "The Run Configurations dialog box.")
+![The Run Configurations dialog box.](mobile-skinning-part2/img/fig05.png)
 
 Figure 5. The Run Configurations dialog box.
 
@@ -360,7 +360,7 @@ For this tutorial, you can start with the premade graphic (see Figure 6) in the
 DensitySpecificButtonTutorial.fxp sample project. You'll find the starter FXG
 files in the skins.assets160 package.
 
-![The transparent, rounded button.](mobile-skinning-part2/img/fig06.png "The transparent, rounded button.")
+![The transparent, rounded button.](mobile-skinning-part2/img/fig06.png)
 
 Figure 6. The transparent, rounded button.
 
@@ -385,7 +385,7 @@ graphic programmatically at runtime. There are two reasons:
 
 Scaling a graphic in Illustrator is deceivingly simple (see Figure 7):
 
-![Transform Panel in Adobe Illustrator CS5](mobile-skinning-part2/img/fig07.png "Transform Panel in Adobe Illustrator CS5")
+![Transform Panel in Adobe Illustrator CS5](mobile-skinning-part2/img/fig07.png)
 
 Figure 7. Transform Panel in Adobe Illustrator CS5
 

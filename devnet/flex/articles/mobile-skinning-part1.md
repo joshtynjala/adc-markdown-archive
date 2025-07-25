@@ -283,7 +283,7 @@ You'll notice that the rounded corners are stretching horizontally (see Figure
 instead let the middle section of the graphic stretch. To accomplish this, you
 need to add scale grid information to the FXG.
 
-![Missing scale grid data.](mobile-skinning-part1/img/fig01.jpg "Missing scale grid data. ")
+![Missing scale grid data.](mobile-skinning-part1/img/fig01.jpg)
 
 Figure 1. Missing scale grid data.
 
@@ -306,7 +306,7 @@ You also want to make sure the border stroke doesn't scale.
 of an arbitrary path. For those cases, use the selection tool in Illustrator and
 hover over an anchor point to find its coordinates (see Figure 2).
 
-![Finding anchor coordinates.](mobile-skinning-part1/img/fig02.jpg "Finding anchor coordinates.")
+![Finding anchor coordinates.](mobile-skinning-part1/img/fig02.jpg)
 
 Figure 2. Finding anchor coordinates.
 
@@ -350,7 +350,7 @@ effect because the path data doesn't fill the full dimensions of the graphic.
 
 In Design View the button will now scale properly (see Figure 3).
 
-![The component after adding the scale grid.](mobile-skinning-part1/img/fig03.jpg "The component after adding the scale grid.")
+![The component after adding the scale grid.](mobile-skinning-part1/img/fig03.jpg)
 
 Figure 3. The component after adding the scale grid.
 
@@ -451,7 +451,7 @@ After adding some Buttons to your application, you should see the new skin and
 its up and down skin states (see Figure 4). The down skin state shows that the
 advanced CSS style rule is in effect.
 
-![Buttons with the new custom skin.](mobile-skinning-part1/img/fig04.jpg "Buttons with the new custom skin.")
+![Buttons with the new custom skin.](mobile-skinning-part1/img/fig04.jpg)
 
 Figure 4. Buttons with the new custom skin.
 

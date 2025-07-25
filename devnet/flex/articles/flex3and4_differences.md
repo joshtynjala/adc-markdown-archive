@@ -96,7 +96,7 @@ In Flash Builder 4, you can do this in the Properties Panel. In the Properties
 Panel, select, Flex Compiler and click the checkbox for "Use Flex 3
 compatibility mode" (see Figure 1).
 
-![Using Flex 3 Compatibility Mode](flex3and4_differences/img/1279863739555.jpg "Using Flex 3 Compatibility Mode ")
+![Using Flex 3 Compatibility Mode](flex3and4_differences/img/1279863739555.jpg)
 
 Figure 1. Using Flex 3 Compatibility Mode
 

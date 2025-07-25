@@ -72,7 +72,7 @@ calls `layoutContents` second.
 Figure 1 shows an example of a simple ActionScript item renderer that displays
 stock ticker symbols and their change in value.
 
-![Figure 1. The StockRenderer item renderer](flex-mobile-performance-checklist/img/fig01.png "Figure 1. The StockRenderer item renderer")
+![Figure 1. The StockRenderer item renderer](flex-mobile-performance-checklist/img/fig01.png)
 
 Figure 1. The StockRenderer item renderer
 
@@ -432,7 +432,7 @@ positions explicitly instead of using nested Groups or dynamic layouts.
 Consider the following three ways to lay out ContactRenderer (see Figure 2), an
 MXML item renderer that displays an individual's name and phone number.
 
-![Figure 2. A single ContactRenderer instance.](flex-mobile-performance-checklist/img/fig02.jpg "Figure 2. A single ContactRenderer instance. ")
+![Figure 2. A single ContactRenderer instance.](flex-mobile-performance-checklist/img/fig02.jpg)
 
 Figure 2. A single ContactRenderer instance.
 

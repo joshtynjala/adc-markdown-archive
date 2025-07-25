@@ -112,7 +112,7 @@ DPI, font metrics will be different due to the different fonts in use. The
 amount of text you can fit in a given area will vary across screen sizes and
 platforms (see Figure 1).
 
-![Figure 1. On the left a BlackBerry PlayBook (landscape, cropped), in the center an Apple iPod 4th generation (portrait), and on the right a Samsung Galaxy S (portrait) using the default styles in the Flex Mobile theme.](mobile-skinning-part3/img/fig01.jpg "Figure 1. On the left a BlackBerry PlayBook (landscape, cropped), in the center an Apple iPod 4th generation (portrait), and on the right a Samsung Galaxy S (portrait) using the default styles in the Flex Mobile theme.")
+![Figure 1. On the left a BlackBerry PlayBook (landscape, cropped), in the center an Apple iPod 4th generation (portrait), and on the right a Samsung Galaxy S (portrait) using the default styles in the Flex Mobile theme.](mobile-skinning-part3/img/fig01.jpg)
 
 Figure 1. On the left a BlackBerry PlayBook (landscape, cropped), in the center
 an Apple iPod 4th generation (portrait), and on the right a Samsung Galaxy S
@@ -655,7 +655,7 @@ Flash Builder automatically creates a run configuration for you.
 7.  Select an iOS device to simulate.
 8.  Click Run (see Figure 11).
 
-![Figure 11. The proof of concept application running on a 4th Generation iPod](mobile-skinning-part3/img/fig11.jpg "Figure 11. The proof of concept application running on a 4th Generation iPod")
+![Figure 11. The proof of concept application running on a 4th Generation iPod](mobile-skinning-part3/img/fig11.jpg)
 
 Figure 11. The proof of concept application running on a 4th Generation iPod
 
