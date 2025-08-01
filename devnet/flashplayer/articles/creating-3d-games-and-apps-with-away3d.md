@@ -74,9 +74,9 @@ player instead of the release version.
 add the new SDK to the list of Installed SDKs in the Flash Builder Preferences
 (see Figure 1).
 
-    ![Add the Flex SDK 4.5 to the list of installed SDKs in Flash Builder.](./creating-games-away3d/fig01.jpg)
+  ![Add the Flex SDK 4.5 to the list of installed SDKs in Flash Builder.](./creating-games-away3d/fig01.jpg)
 
-    Figure 1. Add the Flex SDK 4.5 to the list of installed SDKs in Flash Builder.
+  Figure 1. Add the Flex SDK 4.5 to the list of installed SDKs in Flash Builder.
 
 3.  The Flex SDK contains a file called playerglobal.swc, which contains all the
     native player APIs. To make sure that you're using the correct SWC file that
