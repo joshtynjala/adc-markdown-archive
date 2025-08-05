@@ -906,3 +906,6 @@ However, any class-3, high-assurance certificate should suffice. Remember that
 ChosenSecurity, GlobalSign, VeriSign, and Thawte root certificates are installed
 on all Windows and Mac OS systems by default, though, which makes them more
 convenient for most users.
+
+> This work is licensed under a
+> [Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License](https://creativecommons.org/licenses/by-nc-sa/3.0/)
