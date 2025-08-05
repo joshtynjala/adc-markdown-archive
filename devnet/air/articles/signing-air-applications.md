@@ -1,6 +1,6 @@
 # Signing Adobe AIR applications
 
-## by Mihai Corlan
+by Mihai Corlan
 
 ![Mihai Corlan](./img/1296460286085.jpg)
 

@@ -1,6 +1,6 @@
 # Retrieving a list of network interfaces in Adobe AIR 2
 
-## by William Liang
+by William Liang
 
 ![William Liang](./img/1296445272799.jpg)
 

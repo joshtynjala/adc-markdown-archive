@@ -1,6 +1,6 @@
 # Faster byte array operations with ASC2
 
-## by Philomena Dolla
+by Philomena Dolla
 
 ![Philomena Dolla](./img/philomena-dolla.jpg.adimg.mw.160.png)
 
