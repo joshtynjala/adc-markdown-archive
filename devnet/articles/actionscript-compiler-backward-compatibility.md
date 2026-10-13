@@ -51,45 +51,45 @@ This document includes information related to:
 <th>Severity of change</th>
 </tr>
 <tr>
-<td><p>'<span>public</span>', '<span>private</span>', and
-'<span>protected</span>' are now keywords</p></td>
-<td><p>'<span>public</span>', '<span>private</span>', and
-'<span>protected</span>' were contextually reserved identifiers. They
+<td><p>'<code>public</code>', '<code>private</code>', and
+'<code>protected</code>' are now keywords</p></td>
+<td><p>'<code>public</code>', '<code>private</code>', and
+'<code>protected</code>' were contextually reserved identifiers. They
 could be used in some places, such as in a member expression.</p></td>
-<td><p>'<span>public</span>', '<span>private</span>', and
-'<span>protected</span>' are now keywords, and will be interpreted as
+<td><p>'<code>public</code>', '<code>private</code>', and
+'<code>protected</code>' are now keywords, and will be interpreted as
 such no matter where they are used. That is, certain usages allowed by
 the legacy compiler, like in a member expression, will now be
 disallowed.</p></td>
-<td><p>When you use '<span>public</span>' in a member
+<td><p>When you use '<code>public</code>' in a member
 expression:</p>
 <p> </p>
-<p><span>a.public = "foo";</span></p></td>
+<p><code>a.public = "foo";</code></p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
-<td><p>'<span>internal</span>' is now a keyword, and is
-treated the same as '<span>public</span>', '<span>protected</span>', or
-'<span>private</span>'</p></td>
-<td><p>'<span>internal</span>' was not a keyword and could
+<td><p>'<code>internal</code>' is now a keyword, and is
+treated the same as '<code>public</code>', '<code>protected</code>', or
+'<code>private</code>'</p></td>
+<td><p>'<code>internal</code>' was not a keyword and could
 be used as an identifier, such as the name of a variable.</p></td>
-<td><p>'<span>internal</span>' is now a keyword and a parse
+<td><p>'<code>internal</code>' is now a keyword and a parse
 error is generated if you try to use it as an identifier.</p></td>
 <td><p>When you use 'internal' as an identifier, such as in
 a var declaration:</p>
-<p><span>var internal:String</span>;</p></td>
+<p><code>var internal:String</code>;</p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
 <td><p>Curly braces are required for config blocks</p></td>
 <td><p>You can define code in config blocks as follows:</p>
-<p><span>CONFIG::debug import foo.debug.*;</span></p></td>
+<p><code>CONFIG::debug import foo.debug.*;</code></p></td>
 <td><p>ASC 2.0 reports a syntax error if you don't use curly
 braces. You need to enclose the code within curly braces as follows:</p>
-<p><span>CONFIG::debug<br />
+<p><code>CONFIG::debug<br />
 {<br />
 import foo.debug.*;<br />
-}</span></p></td>
+}</code></p></td>
 <td><p>When you use a config block without curly
 braces</p></td>
 <td><p>Stricter</p></td>
@@ -101,18 +101,18 @@ extra ones would just be ignored.</p></td>
 <td><p>A syntax error occurs.</p></td>
 <td><p>When you specify multiple type of parameters for a
 Vector:</p>
-<p><span>var x:Vector.&lt;String, int&gt;;</span></p></td>
+<p><code>var x:Vector.&lt;String, int&gt;;</code></p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
-<td><p>'<span>default</span>' cannot be used as an
+<td><p>'<code>default</code>' cannot be used as an
 identifier name</p></td>
 <td><p>You can define code as follows:</p>
-<p><span>var x = &lt;{default} /&gt;</span></p>
+<p><code>var x = &lt;{default} /&gt;</code></p>
 <p>However, a runtime error occurs.</p></td>
 <td><p>The following syntax error occurs: "Expecting
-identifier but found keyword '<span>default</span>'."</p></td>
-<td><p>When you use the keyword '<span>default</span>' as an
+identifier but found keyword '<code>default</code>'."</p></td>
+<td><p>When you use the keyword '<code>default</code>' as an
 identifier name embedded in XML literals.</p>
 <p> </p></td>
 <td><p>Stricter</p></td>
@@ -122,17 +122,17 @@ identifier name embedded in XML literals.</p>
 function argument</p></td>
 <td><p>You do not receive a warning when you define code as
 follows:</p>
-<p><span>function bas(x:int)<br />
+<p><code>function bas(x:int)<br />
 {<br />
  var x:int = x;<br />
-}</span></p></td>
-<td><p>The following warning appears: “Warning 5040:
-variable definition duplicates function parameter: arg.”</p></td>
+}</code></p></td>
+<td><p>The following warning appears: "Warning 5040:
+variable definition duplicates function parameter: arg."</p></td>
 <td><p>When you try to redefine a function argument:</p>
-<p><span>function bas(x:int)<br />
+<p><code>function bas(x:int)<br />
 {<br />
  var x:int = x;<br />
-}</span></p></td>
+}</code></p></td>
 <td>Stricter</td>
 </tr>
 <tr>
@@ -140,31 +140,31 @@ variable definition duplicates function parameter: arg.”</p></td>
 functions</p></td>
 <td><p>You do not receive a warning when you define code as
 follows:</p>
-<p><span>function foo()<br />
+<p><code>function foo()<br />
 {<br />
  function baz() {}<br />
  function baz() {}<br />
-}</span></p></td>
-<td><p>The following warning appears: “Warning 1021 :
-Duplicate function definition: baz”</p></td>
+}</code></p></td>
+<td><p>The following warning appears: "Warning 1021 :
+Duplicate function definition: baz"</p></td>
 <td><p>When you define duplicate local function definitions
 as follows:</p>
-<p><span>function foo()<br />
+<p><code>function foo()<br />
 {<br />
  function baz() {}<br />
  function baz() {}<br />
-}</span></p></td>
+}</code></p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
-<td><p><span>public::</span> qualifier may now resolve to
+<td><p><code>public::</code> qualifier may now resolve to
 multiple namespaces depending on the context</p></td>
-<td><p>Defining <span>public::</span> in a package meant
+<td><p>Defining <code>public::</code> in a package meant
 public(package-name)</p></td>
-<td><span>Defining public:: in a package context now means
-public(package-name), unnamed public <span></span></span></td>
+<td>Defining <code>public::</code> in a package context now means
+public(package-name), unnamed public</td>
 <td><p>When you qualify an expression with
-<span>public::</span></p></td>
+<code>public::</code></p></td>
 <td><p>More lenient (some unresolved errors will now
 resolve), and silent change in code generation</p></td>
 </tr>
@@ -172,8 +172,7 @@ resolve), and silent change in code generation</p></td>
 <td><p>Type annotations that resolve to locals are detected
 more consistently in ASC 2.0</p></td>
 <td><p>The compiler would not always give an error if a type
-annotation resolved to a local, such as in "<span>var
-String:String"</span>.</p>
+annotation resolved to a local, such as in "<code>var String:String"</code>.</p>
 <p>And in some cases, the compiler did not report an error, though it
 should have.</p></td>
 <td><p>ASC 2.0 will always issue the appropriate error if a
@@ -181,7 +180,7 @@ type annotation does not resolve to a type.</p></td>
 <td><p>When you define code that collides with a type as
 follows:<br />
 <br />
-<span>var String:String;</span></p></td>
+<code>var String:String;</code></p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
@@ -200,14 +199,14 @@ other code.</p></td>
 <td><p>Not many constants were evaluated at compile
 time.<br />
 <br />
-A reference like <span>MyClass.SOME_CONSTANT</span> would typically
+A reference like <code>MyClass.SOME_CONSTANT</code> would typically
 cause MyClass to be statically initialized if it had not already
 been.</p></td>
 <td>Many more constants are evaluated at compile time.<br />
 <br />
 This could change initialization order of classes. Since references to
 static constants may be replaced by the computed constant values,
-<span>MyClass.SOME_CONSTANT</span> may not cause MyClass to be
+<code>MyClass.SOME_CONSTANT</code> may not cause MyClass to be
 statically initialized.</td>
 <td><p>When referencing static constants and when depending
 on classes to be initialized in a particular order.</p></td>
@@ -217,7 +216,7 @@ on classes to be initialized in a particular order.</p></td>
 <td><p>More consistent warnings for "scoped to default
 namespace"</p></td>
 <td><p>Only warned on classes and class methods that didn't
-have namespace specs (like "<span>public</span>")</p></td>
+have namespace specs (like "<code>public</code>")</p></td>
 <td><p>ASC 2.0 also warns on namespaces, functions, and
 variables</p></td>
 <td><p>Users will often see this with legacy code.</p></td>
@@ -239,11 +238,11 @@ declaration.</p></td>
 <td><p>Silent change in code generation</p></td>
 </tr>
 <tr>
-<td><p>Evaluate “<span>CONFIG const</span>” expressions
+<td><p>Evaluate "<code>CONFIG const</code>" expressions
 correctly</p></td>
 <td><p>Initial-value expressions for config constants, like
 the following, were often not evaluated correctly:</p>
-<p><span>CONFIG const myConst = 10 || 0;</span></p></td>
+<p><code>CONFIG const myConst = 10 || 0;</code></p></td>
 <td><p>Initial-value expressions for config constants are
 evaluated correctly, using the same rules as other expressions.</p></td>
 <td><p>When using config constant expressions.</p></td>
@@ -252,11 +251,11 @@ evaluated correctly, using the same rules as other expressions.</p></td>
 <tr>
 <td><p>Strip metadata in debug SWFs</p></td>
 <td>Metadata was stripped in release SWF files, based on the
-<span>-keep-as3-metadata</span> option, but not in debug SWF files.</td>
+<code>-keep-as3-metadata</code> option, but not in debug SWF files.</td>
 <td><p>Metadata is stripped in both debug and release SWF
 files.</p></td>
 <td><p>When you use
-<span>-keep-as3-metadata</span>.</p></td>
+<code>-keep-as3-metadata</code>.</p></td>
 <td><p>Silent change in code generation</p></td>
 </tr>
 <tr>
@@ -280,9 +279,9 @@ class.</p></td>
 of a statement</p></td>
 <td><p>Code like the following is compiled without
 errors:</p>
-<p><span>[1,2].length<br />
+<p><code>[1,2].length</code><br />
 and<br />
-{"name":"hello"}.name</span></p>
+<code>{"name":"hello"}.name</code></p>
 <p> </p></td>
 <td><p>You get a compiler error: "unbound metadata problem"
 for:</p>
@@ -293,9 +292,9 @@ for:</p>
 </ul></td>
 <td><p>When you define Array literal or Object literal at
 the beginning of a statement.</p>
-<p><span>[1,2].length<br />
+<p><code>[1,2].length</code><br />
 and<br />
-{"name":"hello"}.name</span></p></td>
+<code>{"name":"hello"}.name</code></p></td>
 <td>Stricter</td>
 </tr>
 <tr>
@@ -303,26 +302,26 @@ and<br />
 with an existing variable</p></td>
 <td><p>Code like the following is compiled without
 errors:</p>
-<p><span>function<br />
+<p><code>function<br />
 {<br />
  var x;<br />
  for<br />
  (const x in [1, 2,3])<br />
    {<br />
    }<br />
- }</span></p></td>
+ }</code></p></td>
 <td><p>You get the following compiler error:</p>
-<p>"<span>const x</span>" conflicts with "<span>var x</span>"</p></td>
+<p>"<code>const x</code>" conflicts with "<code>var x</code>"</p></td>
 <td><p>When re-declaring an existing variable as a const
 loop iterator variable.</p>
-<p><span>function<br />
+<p><code>function<br />
 {<br />
  var x;<br />
  for<br />
 (const x in [1,2,3])<br />
    {<br />
    }<br />
-}</span></p></td>
+}</code></p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
@@ -330,29 +329,29 @@ loop iterator variable.</p>
 parameter</p></td>
 <td><p>Code like the following is compiled without
 errors:</p>
-<p><span>function f(p:*)<br />
+<p><code>function f(p:*)<br />
 {<br />
  const p:*;<br />
-}</span></p></td>
+}</code></p></td>
 <td><p>A compiler error occurs.</p></td>
 <td><p>When declaring a local const with the same name as a
 parameter of the containing function.</p>
-<p><span>function f(p:*)<br />
+<p><code>function f(p:*)<br />
 {<br />
  const p:*;<br />
-}</span></p></td>
+}</code></p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
 <td><p>Disallow void as an expression</p></td>
 <td><p>Code like the following is compiled without
 errors:</p>
-<p><span>foo(void)</span></p></td>
+<p><code>foo(void)</code></p></td>
 <td><p>The following compiler error occurs:</p>
 <p>Syntax error: "void" is not allowed here.</p></td>
 <td><p>When you use void as an expression instead of a type
 annotation or an operator:</p>
-<p><span>foo(void)</span></p></td>
+<p><code>foo(void)</code></p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
@@ -360,12 +359,12 @@ annotation or an operator:</p>
 without a curly block</p></td>
 <td><p>Code like the following is compiled without
 errors:</p>
-<p><span>with(...) function x() {}</span></p></td>
+<p><code>with(...) function x() {}</code></p></td>
 <td><p>The following compiler error occurs:</p>
 <p>Syntax error: "function" is not allowed here.</p></td>
 <td><p>When defining a function using a 'with' statement
 without curly braces:</p>
-<p><span>with(...) function x() {}</span></p></td>
+<p><code>with(...) function x() {}</code></p></td>
 <td>Stricter</td>
 </tr>
 <tr>
@@ -382,9 +381,9 @@ it to any variable.</p></td>
 <td><p>Evaluate the left-hand-side of compound assignments
 only once</p></td>
 <td><p>Code like:</p>
-<p><span>onlyOnce().a += 1</span></p>
-<p>would run<span> onlyOnce()</span> twice.</p></td>
-<td><p>Runs <span>onlyOnce() </span>only once.</p></td>
+<p><code>onlyOnce().a += 1</code></p>
+<p>would run<code> onlyOnce()</code> twice.</p></td>
+<td><p>Runs <code>onlyOnce()</code> only once.</p></td>
 <td><p>When you write compound assignments with
 complex left-hand side values, which depend on whether parts of the
 left-hand side values are evaluated once or twice.</p></td>
@@ -393,18 +392,17 @@ left-hand side values are evaluated once or twice.</p></td>
 <tr>
 <td><p>Process metadata on global functions</p></td>
 <td><p>Code like:</p>
-<p><span>[Foo]</span></p>
-<p><span>function bar()</span></p>
-<p><span>did not produce metadata for <span>bar()</span></span></p></td>
-<td><p>Metadata is produced for <span>bar()</span>.</p></td>
+<p><code>[Foo]</code><br />
+<code>function bar()</code></p>
+<p>did not produce metadata for <code>bar()</code></p></td>
+<td><p>Metadata is produced for <code>bar()</code>.</p></td>
 <td><p>When writing metadata on global functions and
 expecting it to be ignored.</p></td>
 <td><p>Silent change in code generation</p></td>
 </tr>
 <tr>
 <td><p>Always use "static mode" semantics</p></td>
-<td><p>Static semantics were turned on by -strict
-flag.</p></td>
+<td><p>Static semantics were turned on by <code>-strict</code> flag.</p></td>
 <td><p>Static semantics are always enabled.</p></td>
 <td><p>Trait entries of global and nested functions are
 allocated as const entries of type Function.</p>
@@ -418,14 +416,14 @@ library.</p></td>
 <td><p>Allow multiple definitions with the same unqualified
 name as long as they have disjoint namespaces</p></td>
 <td><p>Code like:</p>
-<p><span>public class Foo {}<br />
-private class Foo {}</span></p>
+<p><code>public class Foo {}<br />
+private class Foo {}</code></p>
 <p>produces a compiler error.</p></td>
 <td>No compiler error occurs.</td>
 <td><p>When you declare multiple definitions with the same
 unqualified name:</p>
-<p><span>public class Foo {}<br />
-private class Foo {}</span></p></td>
+<p><code>public class Foo {}<br />
+private class Foo {}</code></p></td>
 <td><p>Lenient</p></td>
 </tr>
 <tr>
@@ -440,28 +438,28 @@ unqualified name.</p></td>
 <tr>
 <td><p>Disallow const / var conflicts</p></td>
 <td><p>Code like:</p>
-<p><span>var foo;<br />
-const foo;</span></p>
+<p><code>var foo;<br />
+const foo;</code></p>
 <p>is compiled without errors. The var "overrode" the const.</p></td>
 <td><p>A compiler error occurs. The const declaration
 conflicts with var declaration independent of their order.</p></td>
 <td><p>When you declare a const with the same name as a
 var:</p>
-<p><span>var foo;<br />
-const foo;</span></p></td>
+<p><code>var foo;<br />
+const foo;</code></p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
 <td><p>Disallow increment/decrement of const</p></td>
 <td><p>Code like:</p>
-<p><span>const i;<br />
-i++;</span></p>
+<p><code>const i;<br />
+i++;</code></p>
 <p>is compiled without errors.</p></td>
 <td><p>The following compiler error occurs:</p>
 <p>"Increment operand is invalid."</p></td>
 <td><p>When you try to increment or decrement a const:</p>
-<p><span>const i;<br />
-i++;</span></p></td>
+<p><code>const i;<br />
+i++;</code></p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
@@ -527,7 +525,7 @@ type.</p></td>
 <tr>
 <td><p>Allow null to be divided by any value</p></td>
 <td><p>Code like:</p>
-<p><span>x = null / 2;</span></p>
+<p><code>x = null / 2;</code></p>
 <p>produced the compiler error:<br />
 "Error #1084: Syntax error"</p></td>
 <td><p>No compiler error occurs.</p></td>
@@ -542,17 +540,17 @@ analyzed code; problems in tautologies were ignored.</p></td>
 <td><p>A non-flow-aware analysis finds problems in
 tautologies.</p></td>
 <td><p>When you define code like the following:</p>
-<p><span>function AClassConstructor() {<br />
+<p><code>function AClassConstructor() {<br />
 super();<br />
 if ( false )<br />
 super();  // ASC 2.0 reports problems, legacy compiler does not<br />
-}</span></p>
-<p><span>function f():int<br />
+}</code></p>
+<p><code>function f():int<br />
 {<br />
 if ( false )<br />
 return;  // ASC 2.0 reports problems, legacy compiler does not<br />
 return 44;<br />
-}</span></p></td>
+}</code></p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
@@ -592,16 +590,16 @@ by importing other package names:</p>
 public class B extends A {}"</p></td>
 <td><p>When you define code, like the following, where Base
 class A is ambiguous:</p>
-<p><span>package P1<br />
+<p><code>package P1<br />
 {<br />
  public class A{}<br />
-}</span></p>
-<p><span>package P2<br />
+}</code></p>
+<p><code>package P2<br />
 {<br />
  public class A {}<br />
  class B extends A {}<br />
 }<br />
-import P1.*;</span></p></td>
+import P1.*;</code></p></td>
 <td><p>Stricter</p></td>
 </tr>
 <tr>
@@ -613,7 +611,7 @@ where they were declared.</p></td>
 definition.</p></td>
 <td><p>When you use such a constant: the code emits 5, the
 legacy compiler emits 3:</p>
-<p><span>function test()<br />
+<p><code>function test()<br />
 {<br />
 var accum = constInMiniscope;<br />
  for<br />
@@ -624,17 +622,17 @@ var accum = constInMiniscope;<br />
     accum +=  constInMiniscope;<br />
   }<br />
  return accum;<br />
-}</span></p></td>
+}</code></p></td>
 <td><p>Silent change in code generation</p></td>
 </tr>
 <tr>
-<td><p>"<span>goto</span>" is a keyword</p></td>
+<td><p>"<code>goto</code>" is a keyword</p></td>
 <td><p>Functions, variables, and classes could be named
-"<span>goto</span>"</p></td>
-<td><p>"<span>goto</span>" is a keyword in ASC 2.0, and thus
+"<code>goto</code>"</p></td>
+<td><p>"<code>goto</code>" is a keyword in ASC 2.0, and thus
 cannot be used as the name of a definition.</p></td>
-<td>While compiling AS3 code that uses <span>"goto"
-</span>as the name of a definition.</td>
+<td>While compiling AS3 code that uses <code>"goto"
+</code>as the name of a definition.</td>
 <td><p> </p></td>
 </tr>
 <tr>
@@ -704,13 +702,13 @@ namespace ns and refer to just foo.</p></td>
 <tr>
 <td><p>Disallow URIs for embedded assets</p></td>
 <td><p>Code like:</p>
-<p><span>Embed(source="http://...")</span></p>
+<p><code>Embed(source="http://...")</code></p>
 <p>compiles without errors, downloading and embedding the remote
 asset.</p></td>
 <td><p>A compiler error occurs.</p>
 <p> </p>
 <p>The compiler no longer supports URIs as source locations.
-<span>http://</span> and <span>{{ file://}}</span> produce an error
+<code>http://</code> and <code>file://</code> produce an error
 saying that the source could not be found.</p></td>
 <td><p>When you use an URI to specify an embedded asset.</p></td>
 <td><p>Stricter</p></td>
@@ -719,7 +717,7 @@ saying that the source could not be found.</p></td>
 <td><p>Change the compc error message when looking for an include-class
 in the source-path that is not defined</p></td>
 <td><p>Code like:</p>
-<p><span>foo/bar.as:</span></p>
+<p><code>foo/bar.as:</code></p>
 <p>produces the error: "A file found in a source-path must have an
 externally visible definition. If a definition in the file is meant to
 be externally visible, please put the definition in a package."</p></td>
@@ -728,13 +726,12 @@ foo.bar.</p></td>
 <td><p>When you use compc to compile a class with no externally visible
 definitions:<br />
 <br />
-<span>foo/bar.as = var x:String = "x";<br />
+<code>foo/bar.as = var x:String = "x";<br />
 fcompc<br />
 -load-config=...<br />
--compiler.source<br />
--path foo<br />
+-compiler.source-path foo<br />
 -include-classes foo.bar<br />
--output out.swc</span> </p></td>
+-output out.swc</code> </p></td>
 <td><p>Diagnostic change</p></td>
 </tr>
 <tr>
